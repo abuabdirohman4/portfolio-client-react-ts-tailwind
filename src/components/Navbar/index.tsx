@@ -1,8 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import NavLink from "../NavLink";
 import Logo from "../../assets/icons/logo-abu.svg";
-import NavButton from "../Button/NavButton";
+// import NavButton from "../Button/NavButton";
 
 const Navbar = () => {
   return (
@@ -27,9 +26,9 @@ const Navbar = () => {
             <NavLink href="/">Article</NavLink>
           </ul>
         </div>
-        <div className="md:order-2">
+        {/* <div className="md:order-2">
           <NavButton href="/">Contact Me</NavButton>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
