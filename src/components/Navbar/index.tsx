@@ -20,10 +20,10 @@ const Navbar = () => {
         >
           <ul className="md:font-regular mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm">
             <NavLink href="/">Home</NavLink>
-            <NavLink href="/about">About</NavLink>
+            <NavLink href="/#about">About</NavLink>
             <NavLink href="/skills">Skills</NavLink>
-            <NavLink href="/">Portfolio</NavLink>
-            <NavLink href="/">Article</NavLink>
+            <NavLink href="/portfolio">Portfolio</NavLink>
+            <NavLink href="/article">Article</NavLink>
           </ul>
         </div>
         {/* <div className="md:order-2">

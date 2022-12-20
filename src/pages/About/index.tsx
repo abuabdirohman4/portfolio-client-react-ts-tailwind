@@ -4,7 +4,7 @@ import IconDiamond from "../../assets/icons/diamond.svg";
 const About = () => {
   return (
     <Container>
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-2 gap-10" id="about">
         <div>
           <h1 className="text-[22px] font-semibold">About Me</h1>
           <p className="my-8 mt-4 pr-2 text-lg font-light text-tertiary">
