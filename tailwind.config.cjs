@@ -7,6 +7,11 @@ module.exports = {
         sans: ["Poppins", "sans-serif"],
         serif: ["Roboto", "serif"],
       },
+      colors: {
+        primary: "#642DFB",
+        secondary: "#160442",
+        tertiary: "#6B7193",
+      },
     },
   },
   plugins: [],
