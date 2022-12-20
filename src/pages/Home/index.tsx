@@ -26,7 +26,7 @@ const Home = () => {
       {/* About Me */}
       <div className="grid grid-cols-2 gap-10">
         <div>
-          <h1 className="text-[22px]">About Me</h1>
+          <h1 className="text-[22px] font-semibold">About Me</h1>
           <p className="my-8 mt-4 pr-2 text-lg font-light text-tertiary">
             Sportly App UI Kit will help your Sport, Fitness, and Workout App
             products or services. <br /> Came with modern and sporty style, you
@@ -35,7 +35,7 @@ const Home = () => {
           </p>
         </div>
         <div>
-          <h1 className="text-[22px]">Connect Me</h1>
+          <h1 className="text-[22px] font-semibold">Connect Me</h1>
           <p className="my-8 mt-4 mb-3 text-lg font-light text-tertiary">
             Sportly App UI Kit will help your Sport, Fitness, and Workout App
             products or services.

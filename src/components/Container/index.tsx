@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  children?: React.ReactNode;
+  children?: JSX.Element | JSX.Element[];
 };
 
 const Container = ({ children }: Props) => {
