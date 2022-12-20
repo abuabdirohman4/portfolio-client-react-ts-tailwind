@@ -4,6 +4,7 @@ import Article from "../Article";
 import Portfolio from "../Portfolio";
 import Skills from "../Skills";
 import About from "../About";
+import Contact from "../Contact";
 
 const Home = () => {
   return (
@@ -37,8 +38,11 @@ const Home = () => {
       <div className="my-16">
         <Portfolio />
       </div>
-      <div className="mb-16">
+      <div>
         <Article />
+      </div>
+      <div className="my-16">
+        <Contact />
       </div>
     </>
   );
