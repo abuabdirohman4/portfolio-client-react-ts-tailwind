@@ -22,7 +22,7 @@ const Home = () => {
               Accelerate your work with our millions <br /> of ready-to-use
               design projects.
             </p>
-            <button className="mt-2 mr-2 rounded-full border border-transparent bg-primary px-8 py-3 text-base font-medium text-white hover:bg-secondary hover:shadow md:py-2 md:px-10 md:text-sm">
+            <button className="mt-2 mr-2 rounded-full border border-transparent bg-primary px-8 py-3 text-base font-medium text-white hover:brightness-125 hover:shadow md:py-2 md:px-10 md:text-sm">
               Contact Me
             </button>
           </div>
