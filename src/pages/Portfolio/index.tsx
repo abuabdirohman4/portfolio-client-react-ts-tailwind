@@ -9,22 +9,30 @@ const Portfolio = () => {
   const refCarouselPorto = useRef<null | HTMLDivElement>(null);
   const [carouselWidth, setCarouselWidth] = useState<number>(0);
   const [cardWidth, setCardWidth] = useState<number>(0);
-  // let carouselPorto: HTMLElement | null;
   let scrollPosition = 0;
 
   const next = () => {
-    // carouselPorto = document.querySelector("#carousel-porto");
-    // carouselPorto = refCarouselPorto.current;
     if (scrollPosition < carouselWidth - cardWidth * 3) {
-      console.log("true");
       scrollPosition += cardWidth;
       if (refCarouselPorto.current !== null) {
-        refCarouselPorto.current.scrollLeft = 250;
         refCarouselPorto.current.scrollLeft = scrollPosition;
       }
     } else {
-      console.log("false");
       scrollPosition = 0;
+      if (refCarouselPorto.current !== null) {
+        refCarouselPorto.current.scrollLeft = scrollPosition;
+      }
+    }
+  };
+
+  const prev = () => {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      if (refCarouselPorto.current !== null) {
+        refCarouselPorto.current.scrollLeft = scrollPosition;
+      }
+    } else {
+      scrollPosition = cardWidth * (Math.floor(carouselWidth / cardWidth) - 2);
       if (refCarouselPorto.current !== null) {
         refCarouselPorto.current.scrollLeft = scrollPosition;
       }
@@ -49,7 +57,10 @@ const Portfolio = () => {
     <Container>
       <h1 className="text-[22px] font-semibold">Portfolios</h1>
       <div className="flex">
-        <button className="bg-gray-200 px-3 py-2 hover:bg-gray-300">
+        <button
+          className="bg-gray-200 px-3 py-2 hover:bg-gray-300"
+          onClick={prev}
+        >
           Prev
         </button>
         <button
@@ -94,36 +105,6 @@ const Portfolio = () => {
           description={"Description"}
           className={"carousel-item"}
         />
-        {/* <div
-          className="my-1 w-full px-1 md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4"
-          ref={refCarouselInner}
-        >
-          <div className="overflow-hidden rounded-xl border border-gray-200">
-            <a href="">
-              <div className="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  className="block h-auto w-full"
-                  src={Porto1}
-                />
-              </div>
-            </a>
-
-            <header className="mb-4 px-4 leading-tight">
-              <h1 className="text-lg">
-                <a
-                  href=""
-                  className="font-semibold text-black no-underline hover:underline"
-                >
-                  Title
-                </a>
-              </h1>
-              <span className="block text-sm font-light text-gray-500 no-underline">
-                Description
-              </span>
-            </header>
-          </div>
-        </div> */}
       </div>
     </Container>
   );
