@@ -75,7 +75,7 @@ const Portfolio = () => {
           <FontAwesomeIcon icon={faChevronRight} className="text-secondary" />
         </button>
         <div
-          className="flex overflow-x-auto whitespace-nowrap scrollbar-hide"
+          className="flex overflow-x-auto scroll-smooth whitespace-nowrap scrollbar-hide"
           id="carousel-porto"
           ref={refCarouselPorto}
         >
