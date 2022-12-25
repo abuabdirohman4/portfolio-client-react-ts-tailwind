@@ -3,6 +3,7 @@ import Container from "../../components/Container";
 const Contact = () => {
   return (
     <Container>
+      <h1 className="text-[22px] font-semibold" id="contact">Contact Me</h1>
       <div className="w-full xl:w-6/12">
         <div className="rounded-[30px] bg-white p-8">
           <form>
@@ -69,7 +70,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-primary w-full rounded-full py-3 text-white"
+              className="w-full rounded-full bg-primary py-3 text-white"
             >
               Request Now
             </button>

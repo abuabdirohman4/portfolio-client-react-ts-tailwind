@@ -8,28 +8,33 @@ const About = () => {
         <div>
           <h1 className="text-[22px] font-semibold">About Me</h1>
           <p className="my-8 mt-4 pr-2 text-lg font-light text-tertiary">
-            Sportly App UI Kit will help your Sport, Fitness, and Workout App
-            products or services. <br /> Came with modern and sporty style, you
-            can easily edit and customize all elements with <br /> components
-            that can speed up your design process.
+            I can spend hours writing code and am still willing to code more. <br /> <br />
+            I can build adaptive and high-quality layouts on your design or adapt the website to your corporate identity, I can also create any custom development, complex logic, or other tasks related to the frontend. <br /> <br />
+            I have a perfect understanding of how liquid, JavaScript, HTML, and CSS work, and have a lot of experience working with all of them.<br />
           </p>
         </div>
         <div>
           <h1 className="text-[22px] font-semibold">Connect Me</h1>
           <p className="my-8 mt-4 mb-3 text-lg font-light text-tertiary">
-            Sportly App UI Kit will help your Sport, Fitness, and Workout App
-            products or services.
+            If you want to build a really high-quality website and need help doing so, contact me! <br /> <br />
+            Do have a talk with me and I will enjoy talking back to you. <br /><br />
+            Let's connect or you can reach me.
           </p>
           <div className="flex">
             <img
               src={IconDiamond}
               alt="Icon Diamond"
-              className="rounded-full bg-secondary py-[3px] px-[2px]"
+              className="rounded-full bg-secondary py-[3px] px-[2px] mr-3"
             />
             <img
               src={IconDiamond}
               alt="Icon Diamond"
-              className="rounded-full bg-secondary py-[3px] px-[2px]"
+              className="rounded-full bg-secondary py-[3px] px-[2px] mr-3"
+            />
+            <img
+              src={IconDiamond}
+              alt="Icon Diamond"
+              className="rounded-full bg-secondary py-[3px] px-[2px] mr-3"
             />
           </div>
         </div>

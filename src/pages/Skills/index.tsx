@@ -12,7 +12,7 @@ const Skills = () => {
     <Container>
       <div>
         <h1 className="text-[22px] font-semibold">Skills</h1>
-        <div className="mt-4 flex flex-wrap justify-between gap-4">
+        <div className="mt-4 grid grid-cols-8 gap-4">
           {skills.map((data, id) => {
             return (
               <div
