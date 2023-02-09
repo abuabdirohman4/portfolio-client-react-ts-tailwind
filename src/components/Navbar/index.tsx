@@ -5,7 +5,7 @@ import Logo from "../../assets/icons/logo-abu.svg";
 
 const Navbar = () => {
   return (
-    <nav className="rounded border-gray-200 bg-white px-2 py-2.5 dark:bg-gray-800 sm:px-4">
+    <nav className="hidden rounded border-gray-200 bg-white px-2 py-2.5 sm:px-4 md:block">
       <div className="container mx-auto my-2 flex flex-wrap items-center justify-between">
         <Link className="flex items-center" to="/">
           <img

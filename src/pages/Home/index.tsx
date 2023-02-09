@@ -11,16 +11,14 @@ const Home = () => {
     <>
       <Container>
         {/* Home */}
-        <div className="grid w-full grid-cols-2">
-          <div className="my-auto pl-10">
+        <div className="grid w-full grid-cols-1 md:grid-cols-2">
+          <div className="my-auto hidden pl-10 md:block">
             <p className="font-bold text-primary">Halo 👋, I’am</p>
             <p className="-my-2 text-[42px] font-bold text-secondary">
               Abu Abdirohman
             </p>
             <p className="text-xl font-bold text-secondary">Web Developer</p>
             <p className="my-8 text-xl font-light text-tertiary">
-              {/* Accelerate your work with our millions <br /> of ready-to-use
-              design projects. */}
               Developer at Indosat Ooredoo Hutchison <br /> ReactJs & Frontend
               Web Technology Enthusiast
             </p>
@@ -28,7 +26,27 @@ const Home = () => {
               <a href="#contact">Contact Me</a>
             </button>
           </div>
-          <img src={Hero} alt="Abu Abdirohman" />
+          {/* Mobile */}
+          <div className="my-auto md:hidden">
+            <p className="text-xl font-bold text-primary">
+              Halo 👋, I’am Abu Abdirohman
+            </p>
+            <p className="text-lg font-bold text-secondary">
+              Web Developer Who Cureently Focus On ReactJs & Typescript
+            </p>
+            <p className="my-4 text-sm font-light text-tertiary">
+              Developer at Indosat Ooredoo Hutchison <br /> ReactJs & Frontend
+              Web Technology Enthusiast
+            </p>
+            <button className="mt-2 mr-2 rounded-full border border-transparent bg-primary px-8 py-3 text-base font-medium text-white hover:shadow hover:brightness-125 md:py-2 md:px-10 md:text-sm">
+              <a href="#contact">Contact Me</a>
+            </button>
+          </div>
+          <img
+            src={Hero}
+            alt="Abu Abdirohman"
+            className="order-first md:order-2"
+          />
         </div>
       </Container>
       <div className="mb-16">
