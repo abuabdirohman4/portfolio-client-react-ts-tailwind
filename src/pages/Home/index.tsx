@@ -45,7 +45,7 @@ const Home = () => {
           <img
             src={Hero}
             alt="Abu Abdirohman"
-            className="order-first md:order-2"
+            className="order-first mb-4 border md:border-none md:shadow-none shadow-sm md:order-2"
           />
         </div>
       </Container>
