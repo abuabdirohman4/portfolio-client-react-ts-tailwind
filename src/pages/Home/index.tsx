@@ -49,10 +49,10 @@ const Home = () => {
           />
         </div>
       </Container>
-      <div className="mb-16">
+      <div className="mb-16 hidden md:block">
         <About />
       </div>
-      <div>
+      <div className="my-10 md:my-0">
         <Skills />
       </div>
       <div className="my-16">

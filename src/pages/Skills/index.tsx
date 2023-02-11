@@ -4,7 +4,7 @@ import Javascript from "../../assets/icons/javascript.svg";
 const Skills = () => {
   let i = 0;
   let skills: string[] = [];
-  while (i < 20) {
+  while (i < 10) {
     skills.push("skill");
     i++;
   }
@@ -12,11 +12,11 @@ const Skills = () => {
     <Container>
       <div>
         <h1 className="text-[22px] font-semibold">Skills</h1>
-        <div className="mt-4 grid grid-cols-8 gap-4">
+        <div className="mt-4 grid grid-cols-3 md:grid-cols-8 gap-4">
           {skills.map((data, id) => {
             return (
               <div
-                className="w-32 rounded-2xl bg-[#EEF0F6] px-4 py-3 text-center"
+                className="w- md:w-32 rounded-2xl bg-[#EEF0F6] px-4 py-3 text-center"
                 key={id}
               >
                 <img src={Javascript} alt="" className="mx-auto" />

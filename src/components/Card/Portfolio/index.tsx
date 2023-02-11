@@ -10,7 +10,7 @@ type Props = {
 const CardPortfolio = ({ image, title, description, className }: Props) => {
   return (
     <div
-      className={`my-1 mr-0 block w-full flex-[0_0_calc(100%/3)] px-1 md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4 ${className}`}
+      className={`my-1 mr-0 block w-full flex-shrink-0 md:flex-[0_0_calc(100%/3)] px-1 md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4 ${className}`}
     >
       <div className="overflow-hidden rounded-xl border border-gray-200">
         <Link to="/portfolio/detail">

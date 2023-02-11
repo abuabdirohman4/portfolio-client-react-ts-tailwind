@@ -11,13 +11,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const PortfolioHome = () => {
-  const refCarouselPorto = useRef<null | HTMLDivElement>(null);
+  const refCarouselPorto = useRef<HTMLDivElement>(null);
   const [carouselWidth, setCarouselWidth] = useState<number>(0);
   const [cardWidth, setCardWidth] = useState<number>(0);
   let scrollPosition = 0;
+  let windowSize = null;
 
   const next = () => {
-    if (scrollPosition < carouselWidth - cardWidth * 3) {
+    window.innerWidth > 768 ? (windowSize = 3) : (windowSize = 1);
+    if (scrollPosition < carouselWidth - cardWidth * windowSize) {
       scrollPosition += cardWidth;
       if (refCarouselPorto.current !== null) {
         refCarouselPorto.current.scrollLeft = scrollPosition;
@@ -31,13 +33,15 @@ const PortfolioHome = () => {
   };
 
   const prev = () => {
+    window.innerWidth > 768 ? (windowSize = 2) : (windowSize = 1);
     if (scrollPosition > 0) {
       scrollPosition -= cardWidth;
       if (refCarouselPorto.current !== null) {
         refCarouselPorto.current.scrollLeft = scrollPosition;
       }
     } else {
-      scrollPosition = cardWidth * (Math.floor(carouselWidth / cardWidth) - 2);
+      scrollPosition =
+        cardWidth * (Math.floor(carouselWidth / cardWidth) - windowSize);
       if (refCarouselPorto.current !== null) {
         refCarouselPorto.current.scrollLeft = scrollPosition;
       }
@@ -51,7 +55,7 @@ const PortfolioHome = () => {
     ) as HTMLElement | null;
 
     if (carouselWidth !== null) {
-      setCarouselWidth(carouselWidth.scrollWidth);
+      setCarouselWidth(carouselWidth.scrollWidth - 2);
     }
     if (cardWidth !== null) {
       setCardWidth(cardWidth.offsetWidth);
