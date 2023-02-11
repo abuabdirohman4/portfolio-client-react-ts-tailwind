@@ -3,6 +3,7 @@ import CardPortfolio from "../../components/Card/Portfolio";
 import Porto1 from "../../assets/images/porto-1.png";
 import Porto2 from "../../assets/images/porto-2.png";
 import Porto3 from "../../assets/images/porto-3.png";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   function importAll(r: any) {
@@ -18,10 +19,12 @@ const Portfolio = () => {
   return (
     <Container>
       <h1 className="text-[22px] font-semibold">Portfolios</h1>
+      <Link to="/">Back to home</Link>
       <div className="relative">
         <div className="flex flex-wrap" id="carousel-porto">
           <CardPortfolio
-            image={`assets/images/porto-1.png`}
+            // image={`assets/images/porto-1.png`}
+            image={Porto1}
             title={"Porto 1"}
             description={"Description"}
             className={"carousel-item"}

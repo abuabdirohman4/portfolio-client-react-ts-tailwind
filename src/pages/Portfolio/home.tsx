@@ -9,6 +9,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const PortfolioHome = () => {
   const refCarouselPorto = useRef<HTMLDivElement>(null);
@@ -64,7 +65,9 @@ const PortfolioHome = () => {
 
   return (
     <Container>
-      <h1 className="text-[22px] font-semibold">Portfolios</h1>
+      <h1 className="text-[22px] font-semibold">
+        <Link to="portfolio">Portfolios</Link>
+      </h1>
       <div className="relative">
         <button
           className="absolute bottom-1/2 left-0 h-10 w-10 rounded-full bg-white shadow-xl hover:bg-slate-100 md:h-14 md:w-14"

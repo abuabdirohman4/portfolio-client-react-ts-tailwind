@@ -4,7 +4,7 @@ import Javascript from "../../assets/icons/javascript.svg";
 const Skills = () => {
   let i = 0;
   let skills: string[] = [];
-  while (i < 10) {
+  while (i < 16) {
     skills.push("skill");
     i++;
   }
