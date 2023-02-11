@@ -67,13 +67,13 @@ const PortfolioHome = () => {
       <h1 className="text-[22px] font-semibold">Portfolios</h1>
       <div className="relative">
         <button
-          className="absolute bottom-1/2 left-0 h-14 w-14 rounded-full bg-white shadow-xl hover:bg-slate-100"
+          className="absolute bottom-1/2 left-0 h-10 w-10 rounded-full bg-white shadow-xl hover:bg-slate-100 md:h-14 md:w-14"
           onClick={prev}
         >
           <FontAwesomeIcon icon={faChevronLeft} className="text-secondary" />
         </button>
         <button
-          className="absolute bottom-1/2 right-0 h-14 w-14 rounded-full bg-white shadow-xl hover:bg-slate-100"
+          className="absolute bottom-1/2 right-0 h-10 w-10 rounded-full bg-white shadow-xl hover:bg-slate-100 md:h-14 md:w-14"
           onClick={next}
         >
           <FontAwesomeIcon icon={faChevronRight} className="text-secondary" />

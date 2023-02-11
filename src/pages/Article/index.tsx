@@ -8,8 +8,8 @@ import Article4 from "../../assets/images/article-4.png";
 const Article = () => {
   return (
     <Container>
-    <h1 className="text-[22px] font-semibold">Articles</h1>
-      <div className="flex">
+      <h1 className="text-[22px] font-semibold">Articles</h1>
+      <div className="flex flex-col md:flex-row">
         <CardArticle image={Article1} title={"Article 1"} count={1} />
         <CardArticle image={Article2} title={"Article 2"} count={1} />
         <CardArticle image={Article3} title={"Article 3"} count={1} />
