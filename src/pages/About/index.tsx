@@ -8,7 +8,7 @@ const About = () => {
         <div>
           <h1 className="text-[22px] font-semibold">About Me</h1>
           <p className="my-8 mt-4 pr-2 text-lg font-light text-tertiary">
-            I can spend hours writing code and am still willing to code more. <br /> <br />
+            I can spend hours writing code and am still willing to code more.
             I can build adaptive and high-quality layouts on your design or adapt the website to your corporate identity, I can also create any custom development, complex logic, or other tasks related to the frontend. <br /> <br />
             I have a perfect understanding of how liquid, JavaScript, HTML, and CSS work, and have a lot of experience working with all of them.<br />
           </p>
