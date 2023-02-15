@@ -1,26 +1,50 @@
 import Container from "../../components/Container";
-import Javascript from "../../assets/icons/javascript.svg";
+import backend from "./backend";
+import frontend from "./frontend";
 
 const Skills = () => {
-  let i = 0;
-  let skills: string[] = [];
-  while (i < 16) {
-    skills.push("skill");
-    i++;
-  }
   return (
     <Container>
+      <h1 className="text-[22px] font-semibold">Skills</h1>
       <div>
-        <h1 className="text-[22px] font-semibold">Skills</h1>
-        <div className="mt-4 grid grid-cols-3 md:grid-cols-8 gap-4">
-          {skills.map((data, id) => {
+        <h2 className="text-left text-xl font-light text-tertiary">Frontend</h2>
+        <div className="mt-4 grid grid-cols-3 gap-4 md:grid-cols-8">
+          {frontend.map((data: any, id: number) => {
             return (
               <div
-                className="w- md:w-32 rounded-2xl bg-[#EEF0F6] px-4 py-3 text-center"
+                className="flex flex-col justify-between rounded-2xl bg-[#EEF0F6] px-4 py-3 text-center md:w-32"
                 key={id}
               >
-                <img src={Javascript} alt="" className="mx-auto" />
-                <p className="text-dark mt-2 font-semibold">Javascript</p>
+                <img
+                  src={data.icon}
+                  alt={data.name}
+                  className="m-auto"
+                  width={80}
+                  height={80}
+                />
+                <p className="text-dark mt-2 font-semibold">{data.name}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div>
+        <h2 className="text-left text-xl font-light text-tertiary mt-6">Backend</h2>
+        <div className="mt-4 grid grid-cols-3 gap-4 md:grid-cols-8">
+          {backend.map((data: any, id: number) => {
+            return (
+              <div
+                className="flex flex-col justify-between rounded-2xl bg-[#EEF0F6] px-4 py-3 text-center md:w-32"
+                key={id}
+              >
+                <img
+                  src={data.icon}
+                  alt={data.name}
+                  className="m-auto"
+                  width={80}
+                  height={80}
+                />
+                <p className="text-dark mt-2 font-semibold">{data.name}</p>
               </div>
             );
           })}
