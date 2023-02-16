@@ -46,8 +46,8 @@ const Home = () => {
               <a href="#contact">Contact Me</a>
             </button>
           </div>
-          <div className="relative order-first w-11/12 md:order-2">
-            <div className="w-46 absolute top-16 left-5 -z-10 flex items-center justify-center rounded-2xl border px-3 py-3 text-xs shadow-2xl md:left-14 md:h-20 md:py-0 md:text-sm">
+          <div className="relative order-first w-12/12 md:order-2">
+            <div className="w-46 absolute top-16 left-5 -z-10 flex items-center justify-center rounded-2xl border px-3 py-3 text-xs shadow-2xl md:left-14 2xl:left-16 md:h-20 md:py-0 md:text-sm">
               <div>
                 <img
                   src={IconLinkedln}
@@ -65,7 +65,7 @@ const Home = () => {
               alt="Abu Abdirohman"
               className="-pb-4 mb-4 border shadow-sm md:border-none md:shadow-none"
             />
-            <div className="absolute right-2.5 bottom-12 -z-10 flex w-44 items-center justify-center rounded-2xl border py-3 text-xs shadow-2xl md:right-9 md:h-20 md:text-sm">
+            <div className="absolute right-2.5 bottom-12 -z-10 flex w-44 items-center justify-center rounded-2xl border py-3 text-xs shadow-2xl md:right-9 2xl:right-28 md:h-20 md:text-sm">
               <div>
                 <img
                   src={IconGithub}
