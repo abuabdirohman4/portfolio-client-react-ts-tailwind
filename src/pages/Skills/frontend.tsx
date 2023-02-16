@@ -30,8 +30,8 @@ const frontend: { icon: string; name: string }[] = [
   { icon: alpinejs, name: "Alpinejs" },
   { icon: livewire, name: "Livewire" },
   { icon: jquery, name: "Jquery" },
-  { icon: figma, name: "Figma" },
   { icon: elementor, name: "Elementor" },
+  { icon: figma, name: "Figma" },
 ];
 
 export default frontend;
