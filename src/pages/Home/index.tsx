@@ -46,7 +46,7 @@ const Home = () => {
               <a href="#contact">Contact Me</a>
             </button>
           </div>
-          <div className="relative order-first md:order-2 w-11/12">
+          <div className="relative order-first w-11/12 md:order-2">
             <div className="w-46 absolute top-16 left-5 -z-10 flex items-center justify-center rounded-2xl border px-3 py-3 text-xs shadow-2xl md:left-14 md:h-20 md:py-0 md:text-sm">
               <div>
                 <img
@@ -88,12 +88,12 @@ const Home = () => {
         <Portfolio />
       </div>
       <div>
-      <div className="mb-20">
         <Skills />
       </div>
+      <div className="my-16">
         <Article />
       </div>
-      <div className="my-16">
+      <div className="mb-16">
         <Contact />
       </div>
     </>
