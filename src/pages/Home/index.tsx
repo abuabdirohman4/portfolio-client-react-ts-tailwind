@@ -75,7 +75,7 @@ const Home = () => {
               </div>
               <div>
                 <p className="text-[#151A26]">Github</p>
-                <p className="text-[#A3A5AA]">90 Repositories</p>
+                <p className="text-[#A3A5AA]">120 Repositories</p>
               </div>
             </div>
           </div>
