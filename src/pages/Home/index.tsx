@@ -3,7 +3,7 @@ import Hero from "../../assets/images/hero.svg";
 import Article from "../Article";
 import Portfolio from "../Portfolio/home";
 import Skills from "../Skills";
-import About from "../About";
+// import About from "../About";
 import Contact from "../Contact";
 import IconGithub from "../../assets/icons/github.svg";
 import IconLinkedln from "../../assets/icons/linkedln.svg";

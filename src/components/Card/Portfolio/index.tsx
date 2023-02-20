@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 type Props = {
   image: string;
   title: string;
-  description: string;
+  // description: string;
   className: string;
 };
 
-const CardPortfolio = ({ image, title, description, className }: Props) => {
+const CardPortfolio = ({ image, title, className }: Props) => {
   return (
     <div
       className={`my-1 mr-0 block w-full flex-shrink-0 md:flex-[0_0_calc(100%/3)] px-1 md:w-1/2 lg:my-4 lg:w-1/3 lg:px-4 ${className}`}
@@ -32,9 +32,9 @@ const CardPortfolio = ({ image, title, description, className }: Props) => {
               {title}
             </a>
           </h1>
-          <span className="block text-sm font-light text-gray-500 no-underline">
+          {/* <span className="block text-sm font-light text-gray-500 no-underline">
             {description}
-          </span>
+          </span> */}
         </header>
       </div>
     </div>

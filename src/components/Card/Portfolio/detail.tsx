@@ -1,23 +1,13 @@
-// import gallery1 from "../../assets/images/gallery-1.svg";
-// import gallery2 from "../../assets/images/gallery-2.svg";
-// import gallery3 from "../../assets/images/gallery-3.svg";
-// import gallery4 from "../../assets/images/gallery-4.svg";
-import gallery1 from "../../assets/images/porto/porto-1/1.svg";
-import gallery2 from "../../assets/images/porto/porto-1/2.svg";
-import gallery3 from "../../assets/images/porto/porto-1/3.svg";
-import gallery4 from "../../assets/images/porto/porto-1/4.svg";
-import gallery5 from "../../assets/images/porto/porto-1/5.svg";
+import gallery1 from "../../assets/images/gallery-1.svg";
+import gallery2 from "../../assets/images/gallery-2.svg";
+import gallery3 from "../../assets/images/gallery-3.svg";
+import gallery4 from "../../assets/images/gallery-4.svg";
 import iconCheck from "../../assets/icons/icon-check.png";
-import { useEffect, useRef, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const PortfolioDetail = () => {
   const [mainGallery, setMainGallery] = useState<any>(gallery1);
-  const galleries = [gallery1, gallery2, gallery3, gallery4, gallery5];
+  const galleries = [gallery2, gallery1, gallery3, gallery4];
   const features = [
     "Pinia Management",
     "Documentation",
@@ -29,61 +19,6 @@ const PortfolioDetail = () => {
     setMainGallery(gallery);
   };
 
-  const refCarouselPorto = useRef<HTMLDivElement>(null);
-  const [carouselWidth, setCarouselWidth] = useState<number>(0);
-  const [cardWidth, setCardWidth] = useState<number>(0);
-  let scrollPosition = 0;
-  let windowSize = null;
-
-  console.log("carouselWidth", carouselWidth);
-  console.log("cardWidth", cardWidth);
-
-  const next = () => {
-    console.log(window.innerWidth);
-    window.innerWidth > 768 ? (windowSize = 3) : (windowSize = 1);
-    if (scrollPosition < carouselWidth - cardWidth * windowSize) {
-      scrollPosition += cardWidth;
-      if (refCarouselPorto.current !== null) {
-        refCarouselPorto.current.scrollLeft = scrollPosition;
-      }
-    } else {
-      scrollPosition = 0;
-      if (refCarouselPorto.current !== null) {
-        refCarouselPorto.current.scrollLeft = scrollPosition;
-      }
-    }
-  };
-
-  const prev = () => {
-    window.innerWidth > 768 ? (windowSize = 2) : (windowSize = 1);
-    if (scrollPosition > 0) {
-      scrollPosition -= cardWidth;
-      if (refCarouselPorto.current !== null) {
-        refCarouselPorto.current.scrollLeft = scrollPosition;
-      }
-    } else {
-      scrollPosition =
-        cardWidth * (Math.floor(carouselWidth / cardWidth) - windowSize);
-      if (refCarouselPorto.current !== null) {
-        refCarouselPorto.current.scrollLeft = scrollPosition;
-      }
-    }
-  };
-
-  useEffect(() => {
-    const carouselWidth = refCarouselPorto.current;
-    const cardWidth = document.querySelector(
-      "#carousel-detail-porto .carousel-item"
-    ) as HTMLElement | null;
-
-    if (carouselWidth !== null) {
-      setCarouselWidth(carouselWidth.scrollWidth);
-    }
-    if (cardWidth !== null) {
-      setCardWidth(cardWidth.offsetWidth);
-    }
-  }, []);
-
   return (
     <div className="container mx-auto mb-10 max-w-7xl p-2">
       <div className="flex flex-row flex-wrap py-4">
@@ -94,44 +29,16 @@ const PortfolioDetail = () => {
           <p className="text-gray-500">Build your next coin startup</p>
           <section>
             <img src={mainGallery} className="mt-6 w-full rounded-xl" />
-            <div className="relative">
-              <button
-                className="absolute bottom-1/2 left-0 h-10 w-10 rounded-full bg-white shadow-xl hover:bg-slate-100 md:h-14 md:w-14"
-                onClick={prev}
-              >
-                <FontAwesomeIcon
-                  icon={faChevronLeft}
-                  className="text-secondary"
-                />
-              </button>
-              <button
-                className="absolute bottom-1/2 right-0 h-10 w-10 rounded-full bg-white shadow-xl hover:bg-slate-100 md:h-14 md:w-14"
-                onClick={next}
-              >
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className="text-secondary"
-                />
-              </button>
-            </div>
-            <div
-              className=" mt-4 flex gap-4 scroll-smooth whitespace-nowrap scrollbar-hide"
-              id="carousel-detail-porto"
-              ref={refCarouselPorto}
-            >
+            <div className="mt-4 grid grid-cols-4 gap-4">
               {galleries.map((gallery, key): any => (
                 <div
-                  className="block flex-shrink-0 md:flex-[0_0_calc(100%/4)]"
                   key={key}
+                  className={`cursor-pointer overflow-hidden rounded-2xl ${
+                    mainGallery == gallery && "ring-2 ring-indigo-500"
+                  }`}
+                  onClick={() => changeMainGallery(gallery)}
                 >
-                  <div
-                    className={`carousel-item cursor-pointer overflow-hidden rounded-2xl ${
-                      mainGallery == gallery && "ring-2 ring-indigo-500"
-                    }`}
-                    onClick={() => changeMainGallery(gallery)}
-                  >
-                    <img src={gallery} className="w-full" />
-                  </div>
+                  <img src={gallery} className="w-full" />
                 </div>
               ))}
             </div>
@@ -179,8 +86,7 @@ const PortfolioDetail = () => {
                 <div className="mb-2 flex">
                   <div>
                     <img
-                      // src="@/assets/img/icon-sketch.png"
-                      src=""
+                      src="@/assets/img/icon-sketch.png"
                       alt=""
                       className="w-16"
                     />
@@ -198,7 +104,7 @@ const PortfolioDetail = () => {
                 </h1>
                 <ul className="mb-6 text-gray-500">
                   {features.map((feature, key): any => (
-                    <li className="mb-2" key={key}>
+                    <li className="mb-2">
                       {feature}
                       <img src={iconCheck} className="float-right w-5" alt="" />
                     </li>

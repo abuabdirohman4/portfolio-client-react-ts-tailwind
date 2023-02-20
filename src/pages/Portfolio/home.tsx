@@ -1,5 +1,6 @@
 import Container from "../../components/Container";
 import CardPortfolio from "../../components/Card/Portfolio";
+import Porto from "./porto";
 import Porto1 from "../../assets/images/porto-1.png";
 import Porto2 from "../../assets/images/porto-2.png";
 import Porto3 from "../../assets/images/porto-3.png";
@@ -86,13 +87,17 @@ const PortfolioHome = () => {
           id="carousel-porto"
           ref={refCarouselPorto}
         >
-          <CardPortfolio
-            image={Porto1}
-            title={"Porto 1"}
-            description={"Description"}
-            className={"carousel-item"}
-          />
-          <CardPortfolio
+          {/* {Porto.map((data, key): ) => ( */}
+          {Porto.map((data, key) => (
+            <CardPortfolio
+              key={key}
+              image={data.image}
+              title={data.title}
+              className={"carousel-item"}
+            />
+          ))}
+          {/* )} */}
+          {/* <CardPortfolio
             image={Porto2}
             title={"Porto 2"}
             description={"Description"}
@@ -115,7 +120,7 @@ const PortfolioHome = () => {
             title={"Porto 5"}
             description={"Description"}
             className={"carousel-item"}
-          />
+          /> */}
         </div>
       </div>
     </Container>

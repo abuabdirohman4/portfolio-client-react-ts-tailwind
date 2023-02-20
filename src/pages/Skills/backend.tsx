@@ -9,9 +9,6 @@ import mongo from "../../assets/icons/mongo.svg";
 import postgre from "../../assets/icons/postgre.svg";
 import api from "../../assets/icons/api.svg";
 import wordpress from "../../assets/icons/wordpress.svg";
-// import docker from "../../assets/icons/docker.svg";
-// import linux from "../../assets/icons/linux.svg";
-// import githubAction from "../../assets/icons/github-action.svg";
 
 const backend: { icon: string; name: string }[] = [
   { icon: php, name: "PHP" },
@@ -25,8 +22,6 @@ const backend: { icon: string; name: string }[] = [
   { icon: mongo, name: "MongoDB" },
   { icon: postgre, name: "PostgreSQL" },
   { icon: api, name: "REST API" },
-  // { icon: docker, name: "Docker" },
-  // { icon: githubAction, name: "GitHub Actions" },
 ];
 
 export default backend;

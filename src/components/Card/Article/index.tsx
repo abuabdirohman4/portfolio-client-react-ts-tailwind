@@ -13,10 +13,10 @@ const CardArticle = ({
 }: Props) => {
   return (
     <div className="my-1 w-full px-1 transition-all hover:scale-105 md:w-1/2 lg:my-4 lg:w-1/4 lg:px-4">
-      <div className="h-64 overflow-hidden rounded-xl border border-gray-200">
+      <div className="xl:h-64 overflow-hidden rounded-xl border border-gray-200">
         <a href={link} target="_blank">
           <div className="m-4 overflow-hidden rounded-xl">
-            <img alt="title" className="block h-32 w-full" src={image} />
+            <img alt="title" className="block h-auto xl:h-32 w-full" src={image} />
           </div>
         </a>
 
