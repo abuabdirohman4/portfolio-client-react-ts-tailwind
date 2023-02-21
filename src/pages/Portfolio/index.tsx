@@ -1,47 +1,27 @@
 import Container from "../../components/Container";
 import CardPortfolio from "../../components/Card/Portfolio";
-import Porto1 from "../../assets/images/porto-1.png";
-import Porto2 from "../../assets/images/porto-2.png";
-import Porto3 from "../../assets/images/porto-3.png";
+import Porto from "./porto";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
     <Container>
       <h1 className="text-[22px] font-semibold">Portfolios</h1>
-      <Link to="/">Back to home</Link>
+      <Link className="md:hidden" to="/">
+        Back to home
+      </Link>
       <div className="relative">
         <div className="flex flex-wrap" id="carousel-porto">
-          <CardPortfolio
-            image={Porto1}
-            title={"Porto 1"}
-            // description={"Description"}
-            className={"carousel-item"}
-          />
-          <CardPortfolio
-            image={Porto2}
-            title={"Porto 2"}
-            // description={"Description"}
-            className={"carousel-item"}
-          />
-          <CardPortfolio
-            image={Porto3}
-            title={"Porto 3"}
-            // description={"Description"}
-            className={"carousel-item"}
-          />
-          <CardPortfolio
-            image={Porto2}
-            title={"Porto 4"}
-            // description={"Description"}
-            className={"carousel-item"}
-          />
-          <CardPortfolio
-            image={Porto3}
-            title={"Porto 5"}
-            // description={"Description"}
-            className={"carousel-item"}
-          />
+          {Porto.map((data, key) => (
+            <CardPortfolio
+              key={key}
+              desc={data.desc}
+              image={data.image}
+              title={data.title}
+              slug={data.slug}
+              className={"carousel-item"}
+            />
+          ))}
         </div>
       </div>
     </Container>

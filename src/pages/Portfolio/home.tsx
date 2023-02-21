@@ -68,13 +68,25 @@ const PortfolioHome = () => {
       </h1>
       <div className="relative">
         <button
-          className="absolute bottom-1/2 left-0 h-10 w-10 rounded-full bg-white shadow-xl hover:bg-slate-100 md:h-14 md:w-14"
+          className={`${
+            Porto.length === 1
+              ? "hidden"
+              : Porto.length < 4 && window.innerWidth >= 768
+              ? "hidden"
+              : ""
+          } absolute bottom-1/2 left-0 h-10 w-10 rounded-full bg-white shadow-xl hover:bg-slate-100 md:h-14 md:w-14`}
           onClick={prev}
         >
           <FontAwesomeIcon icon={faChevronLeft} className="text-secondary" />
         </button>
         <button
-          className="absolute bottom-1/2 right-0 h-10 w-10 rounded-full bg-white shadow-xl hover:bg-slate-100 md:h-14 md:w-14"
+          className={`${
+            Porto.length === 1
+              ? "hidden"
+              : Porto.length < 4 && window.innerWidth >= 768
+              ? "hidden"
+              : ""
+          } absolute bottom-1/2 right-0 h-10 w-10 rounded-full bg-white shadow-xl hover:bg-slate-100 md:h-14 md:w-14`}
           onClick={next}
         >
           <FontAwesomeIcon icon={faChevronRight} className="text-secondary" />
