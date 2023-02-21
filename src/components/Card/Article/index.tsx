@@ -16,7 +16,7 @@ const CardArticle = ({
       <div className="xl:h-64 overflow-hidden rounded-xl border border-gray-200">
         <a href={link} target="_blank">
           <div className="m-4 overflow-hidden rounded-xl">
-            <img alt="title" className="block h-auto xl:h-32 w-full" src={image} />
+            <img alt="title" className="block xl:h-32 w-full" src={image} />
           </div>
         </a>
 
