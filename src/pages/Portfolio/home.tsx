@@ -1,9 +1,6 @@
 import Container from "../../components/Container";
 import CardPortfolio from "../../components/Card/Portfolio";
 import Porto from "./porto";
-import Porto1 from "../../assets/images/porto-1.png";
-import Porto2 from "../../assets/images/porto-2.png";
-import Porto3 from "../../assets/images/porto-3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -87,40 +84,16 @@ const PortfolioHome = () => {
           id="carousel-porto"
           ref={refCarouselPorto}
         >
-          {/* {Porto.map((data, key): ) => ( */}
           {Porto.map((data, key) => (
             <CardPortfolio
               key={key}
+              desc={data.desc}
               image={data.image}
               title={data.title}
+              slug={data.slug}
               className={"carousel-item"}
             />
           ))}
-          {/* )} */}
-          {/* <CardPortfolio
-            image={Porto2}
-            title={"Porto 2"}
-            description={"Description"}
-            className={"carousel-item"}
-          />
-          <CardPortfolio
-            image={Porto3}
-            title={"Porto 3"}
-            description={"Description"}
-            className={"carousel-item"}
-          />
-          <CardPortfolio
-            image={Porto2}
-            title={"Porto 4"}
-            description={"Description"}
-            className={"carousel-item"}
-          />
-          <CardPortfolio
-            image={Porto3}
-            title={"Porto 5"}
-            description={"Description"}
-            className={"carousel-item"}
-          /> */}
         </div>
       </div>
     </Container>

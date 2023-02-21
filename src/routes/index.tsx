@@ -5,6 +5,7 @@ import Skills from "../pages/Skills";
 import Portfolio from "../pages/Portfolio";
 import Article from "../pages/Article";
 import PortfolioDetail from "../pages/Portfolio/detail";
+import CardPortfolioDetail from "../components/Card/Portfolio/detail";
 
 const AppRoutes = () => {
   return (
@@ -12,10 +13,10 @@ const AppRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="skills" element={<Skills />} />
-        <Route path="portfolio">
-          <Route path="" element={<Portfolio />} />
-          <Route path="detail" element={<PortfolioDetail />} />
-        </Route>
+      <Route path="portfolio">
+        <Route path="" element={<Portfolio />} />
+        <Route path="detail/:slugPorto" element={<CardPortfolioDetail />} />
+      </Route>
       {/* <Route path="portfolio" element={<Portfolio />} /> */}
       <Route path="article" element={<Article />} />
     </Routes>

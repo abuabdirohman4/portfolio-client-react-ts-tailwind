@@ -17,7 +17,7 @@ import redux from "../../assets/icons/redux.svg";
 
 const frontend: { icon: string; name: string }[] = [
   { icon: html, name: "HTML" },
-  { icon: css, name: "HTML" },
+  { icon: css, name: "CSS" },
   { icon: javascript, name: "Javascript" },
   { icon: typescript, name: "Typescript" },
   { icon: react, name: "React" },
