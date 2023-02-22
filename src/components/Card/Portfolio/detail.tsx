@@ -127,14 +127,15 @@ const CardPortfolioDetail = () => {
                   ))}
                 </ul>
               </div>
-
-              <a
-                href={porto.link}
-                target="_blank"
-                className="md:text-md inline-flex w-full items-center justify-center rounded-full border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 hover:shadow md:py-2 md:px-10"
-              >
-                Visit Site
-              </a>
+              {porto.link && (
+                <a
+                  href={porto.link}
+                  target="_blank"
+                  className="md:text-md inline-flex w-full items-center justify-center rounded-full border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 hover:shadow md:py-2 md:px-10"
+                >
+                  Visit Site
+                </a>
+              )}
             </div>
           </div>
         </aside>
