@@ -10,7 +10,7 @@ const Portfolio = () => {
       <Link className="md:hidden" to="/">
         Back to home
       </Link>
-      <div className="relative">
+      <div className="relative mt-4 md:mt-0">
         <div className="flex flex-wrap" id="carousel-porto">
           {Porto.map((data, key) => (
             <CardPortfolio
