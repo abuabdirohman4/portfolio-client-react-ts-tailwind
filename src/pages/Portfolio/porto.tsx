@@ -13,12 +13,21 @@ import gallery3_1 from "../../assets/images/porto/porto-3/1.svg";
 import gallery3_2 from "../../assets/images/porto/porto-3/2.svg";
 import gallery3_3 from "../../assets/images/porto/porto-3/3.svg";
 import gallery3_4 from "../../assets/images/porto/porto-3/4.svg";
-import html from "../../assets/icons/html.svg";
+import Porto4 from "../../assets/images/porto/porto-4/thumbnails.svg";
+import gallery4_1 from "../../assets/images/porto/porto-4/1.svg";
+import gallery4_2 from "../../assets/images/porto/porto-4/2.svg";
+import gallery4_3 from "../../assets/images/porto/porto-4/3.svg";
+import gallery4_4 from "../../assets/images/porto/porto-4/4.svg";
 import bootstrap from "../../assets/icons/bootstrap.svg";
+import cpanel from "../../assets/icons/cpanel.svg";
+import elementor from "../../assets/icons/elementor.svg";
+import html from "../../assets/icons/html.svg";
 import javascript from "../../assets/icons/javascript.svg";
-import tailwind from "../../assets/icons/tailwind.svg";
+import mysql from "../../assets/icons/mysql.svg";
 import next from "../../assets/icons/next.svg";
+import tailwind from "../../assets/icons/tailwind.svg";
 import vercel from "../../assets/icons/vercel.svg";
+import wordpress from "../../assets/icons/wordpress.svg";
 
 const Porto: {
   desc: string;
@@ -112,6 +121,37 @@ const Porto: {
       },
     ],
     gallery: [gallery3_1, gallery3_2, gallery3_3, gallery3_4],
+  },
+  {
+    desc: "Bantu anak-anak di Papua untuk mendapatkan air bersih",
+    feat: [
+      "Donation Feature",
+      "Blog Post",
+      "Responsive Design",
+    ],
+    image: Porto4,
+    link: "https://donasi.abuabdirohman.com/",
+    title: "Beri 10000 - Siapa Beri10000 ? ",
+    slug: "beri-10000",
+    tech: [
+      {
+        icon: wordpress,
+        name: "Wordpress",
+      },
+      {
+        icon: elementor,
+        name: "Elementor",
+      },
+      {
+        icon: mysql,
+        name: "MySQL",
+      },
+      {
+        icon: cpanel,
+        name: "Cpanel",
+      },
+    ],
+    gallery: [gallery4_1, gallery4_2, gallery4_3, gallery4_4],
   },
 ];
 
