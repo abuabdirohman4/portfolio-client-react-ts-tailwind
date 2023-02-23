@@ -3,7 +3,6 @@ import Hero from "../../assets/images/hero.svg";
 import Article from "../Article";
 import Portfolio from "../Portfolio/home";
 import Skills from "../Skills";
-// import About from "../About";
 import Contact from "../Contact";
 import IconGithub from "../../assets/icons/github.svg";
 import IconLinkedln from "../../assets/icons/linkedln.svg";
@@ -20,15 +19,17 @@ const Home = () => {
               Abu Abdirohman
             </p>
             <p className="text-xl font-bold text-secondary">
-              Web Developer Who Currently Focus On ReactJs & Typescript
+              Full Stack Developer Who Currently Focus On ReactJs & Typescript
             </p>
             <p className="my-8 text-xl font-light text-tertiary">
               Developer at Indosat Ooredoo Hutchison <br /> ReactJs & Frontend
               Web Technology Enthusiast
             </p>
-            <button className="mt-2 mr-2 rounded-full border border-transparent bg-primary px-8 py-3 text-base font-medium text-white hover:shadow hover:brightness-125 md:py-2 md:px-10 md:text-sm">
-              <a href="#contact">Contact Me</a>
-            </button>
+            <a href="#contact">
+              <button className="mt-2 mr-2 rounded-full border border-transparent bg-primary px-8 py-3 text-base font-medium text-white hover:shadow hover:brightness-125 md:py-2 md:px-10 md:text-sm">
+                Contact Me
+              </button>
+            </a>
           </div>
           {/* Mobile */}
           <div className="my-auto md:hidden">
@@ -46,8 +47,9 @@ const Home = () => {
               <a href="#contact">Contact Me</a>
             </button>
           </div>
-          <div className="relative order-first w-12/12 md:order-2">
-            <div className="w-46 absolute top-16 left-5 -z-10 flex items-center justify-center rounded-2xl border px-3 py-3 text-xs shadow-2xl md:left-14 2xl:left-16 md:h-20 md:py-0 md:text-sm">
+          {/* Desktop */}
+          <div className="w-12/12 relative order-first md:order-2">
+            <div className="w-46 absolute top-16 left-5 -z-10 flex items-center justify-center rounded-2xl border px-3 py-3 text-xs shadow-2xl md:left-14 md:h-20 md:py-0 md:text-sm 2xl:left-16">
               <div>
                 <img
                   src={IconLinkedln}
@@ -65,7 +67,7 @@ const Home = () => {
               alt="Abu Abdirohman"
               className="-pb-4 mb-4 border shadow-sm md:border-none md:shadow-none"
             />
-            <div className="absolute right-2.5 bottom-12 -z-10 flex w-44 items-center justify-center rounded-2xl border py-3 text-xs shadow-2xl md:right-9 2xl:right-28 md:h-20 md:text-sm">
+            <div className="absolute right-2.5 bottom-12 -z-10 flex w-44 items-center justify-center rounded-2xl border py-3 text-xs shadow-2xl md:right-9 md:h-20 md:text-sm 2xl:right-28">
               <div>
                 <img
                   src={IconGithub}
@@ -81,9 +83,6 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      {/* <div className="mb-16 hidden md:block">
-        <About />
-      </div> */}
       <div className="my-16">
         <Portfolio />
       </div>

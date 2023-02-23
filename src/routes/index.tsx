@@ -4,8 +4,8 @@ import About from "../pages/About";
 import Skills from "../pages/Skills";
 import Portfolio from "../pages/Portfolio";
 import Article from "../pages/Article";
-import PortfolioDetail from "../pages/Portfolio/detail";
 import CardPortfolioDetail from "../components/Card/Portfolio/detail";
+import Contact from "../pages/Contact";
 
 const AppRoutes = () => {
   return (
@@ -17,8 +17,8 @@ const AppRoutes = () => {
         <Route path="" element={<Portfolio />} />
         <Route path="detail/:slugPorto" element={<CardPortfolioDetail />} />
       </Route>
-      {/* <Route path="portfolio" element={<Portfolio />} /> */}
       <Route path="article" element={<Article />} />
+      <Route path="contact" element={<Contact />} />
     </Routes>
   );
 };
