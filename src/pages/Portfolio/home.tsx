@@ -92,7 +92,7 @@ const PortfolioHome = () => {
           <FontAwesomeIcon icon={faChevronRight} className="text-secondary" />
         </button>
         <div
-          className="flex overflow-x-auto scroll-smooth whitespace-nowrap scrollbar-hide"
+          className="flex overflow-x-auto scroll-smoot scrollbar-hide"
           id="carousel-porto"
           ref={refCarouselPorto}
         >

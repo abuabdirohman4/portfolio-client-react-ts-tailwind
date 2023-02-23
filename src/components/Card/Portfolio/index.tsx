@@ -16,24 +16,20 @@ const CardPortfolio = ({ desc, image, title, slug, className }: Props) => {
       <div className="overflow-hidden rounded-xl border border-gray-200">
         <Link to={`/portfolio/detail/${slug}`}>
           <div className="m-4 overflow-hidden rounded-xl">
-            <img
-              alt="Placeholder"
-              className="block h-auto w-full"
-              src={image}
-            />
+            <img alt="Placeholder" className="block h-48 w-full" src={image} />
           </div>
         </Link>
 
         <header className="mb-4 px-4 leading-tight">
-          <h1 className="text-lg">
-            <a
-              href=""
+          <h1 className="text-lg line-clamp-1">
+            <Link
+              to={`/portfolio/detail/${slug}`}
               className="font-semibold text-black no-underline hover:underline"
             >
               {title}
-            </a>
+            </Link>
           </h1>
-          <span className="block text-sm font-light text-gray-500 no-underline">
+          <span className="block h-auto text-sm font-light text-gray-500 no-underline line-clamp-1 xl:h-10 2xl:h-auto">
             {desc}
           </span>
         </header>

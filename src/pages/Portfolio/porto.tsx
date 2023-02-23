@@ -18,10 +18,19 @@ import gallery4_1 from "../../assets/images/porto/porto-4/1.svg";
 import gallery4_2 from "../../assets/images/porto/porto-4/2.svg";
 import gallery4_3 from "../../assets/images/porto/porto-4/3.svg";
 import gallery4_4 from "../../assets/images/porto/porto-4/4.svg";
+import Porto5 from "../../assets/images/porto/porto-5/thumbnails.svg";
+import gallery5_1 from "../../assets/images/porto/porto-5/1.svg";
+import gallery5_2 from "../../assets/images/porto/porto-5/2.svg";
+import gallery5_3 from "../../assets/images/porto/porto-5/3.svg";
+import gallery5_4 from "../../assets/images/porto/porto-5/4.svg";
+import alpinejs from "../../assets/icons/alpinejs.svg";
 import bootstrap from "../../assets/icons/bootstrap.svg";
 import cpanel from "../../assets/icons/cpanel.svg";
 import elementor from "../../assets/icons/elementor.svg";
+import githubActions from "../../assets/icons/github-actions.svg";
 import html from "../../assets/icons/html.svg";
+import laravel from "../../assets/icons/laravel.svg";
+import livewire from "../../assets/icons/livewire.svg";
 import javascript from "../../assets/icons/javascript.svg";
 import mysql from "../../assets/icons/mysql.svg";
 import next from "../../assets/icons/next.svg";
@@ -68,7 +77,7 @@ const Porto: {
     gallery: [gallery1_1, gallery1_2, gallery1_3, gallery1_4],
   },
   {
-    desc: "Learn Whatever You Like With Fun",
+    desc: "Learn Whatever You Like Anywhere And With Fun",
     feat: [
       "Beautiful Design",
       "Carousel",
@@ -124,11 +133,7 @@ const Porto: {
   },
   {
     desc: "Bantu anak-anak di Papua untuk mendapatkan air bersih",
-    feat: [
-      "Donation Feature",
-      "Blog Post",
-      "Responsive Design",
-    ],
+    feat: ["Donation Feature", "Blog Post", "Responsive Design"],
     image: Porto4,
     link: "https://donasi.abuabdirohman.com/",
     title: "Beri 10000 - Siapa Beri10000 ? ",
@@ -152,6 +157,46 @@ const Porto: {
       },
     ],
     gallery: [gallery4_1, gallery4_2, gallery4_3, gallery4_4],
+  },
+  {
+    desc: "Surat Menyurat Untuk Kantor Kecamatan Regol",
+    feat: [
+      "TALL Stack",
+      "CRUD, Search & Pagination",
+      "Excel Download",
+      "Deploy With Github Actions",
+    ],
+    image: Porto5,
+    link: "https://sikatrol-regol.com/",
+    title: "Sikatrol Regol - Surat Menyurat",
+    slug: "sikatrol-regol",
+    tech: [
+      {
+        icon: tailwind,
+        name: "Tailwind",
+      },
+      {
+        icon: alpinejs,
+        name: "AlpineJs",
+      },
+      {
+        icon: laravel,
+        name: "Laravel",
+      },
+      {
+        icon: livewire,
+        name: "Livewire",
+      },
+      {
+        icon: mysql,
+        name: "MySQL",
+      },
+      {
+        icon: githubActions,
+        name: "Github Actions",
+      },
+    ],
+    gallery: [gallery5_1, gallery5_2, gallery5_3, gallery5_4],
   },
 ];
 
