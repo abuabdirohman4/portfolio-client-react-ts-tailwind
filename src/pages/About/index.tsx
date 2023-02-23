@@ -8,7 +8,7 @@ import AboutButton from "../../components/Button/AboutButton";
 const About = () => {
   return (
     <Container className="md:-mx-10">
-      <div className="grid w-full grid-cols-1 md:grid-cols-2">
+      <div className="grid w-full grid-cols-1 text-center md:grid-cols-2 md:text-left">
         <div className="w-12/12 relative order-first">
           <img
             src={Hero}
@@ -16,8 +16,8 @@ const About = () => {
             className="-pb-4 mb-4 border shadow-sm md:border-none md:shadow-none"
           />
         </div>
-        <div className="my-16 pl-10 md:block">
-          <p className="-my-2 text-[42px] font-bold text-secondary">
+        <div className="my-6 md:my-16 md:block md:pl-10">
+          <p className="-my-2 text-3xl font-semibold text-secondary md:text-[42px] md:font-bold">
             Abu Abdirohman
           </p>
           <p className="text-md mt-3 mb-5 font-light text-tertiary">
@@ -25,17 +25,13 @@ const About = () => {
             learner.
           </p>
           <p className="font-base text-tertiary">Email Me</p>
-          <button className="mt-1 mr-2 rounded-full border border-transparent bg-secondary px-0 py-3 text-base font-medium text-white hover:bg-tertiary hover:shadow hover:brightness-125 md:py-1 md:px-2 md:text-sm">
+          <button className="mt-1 mr-2 rounded-full border border-transparent bg-secondary px-2 py-1 text-base text-sm font-medium text-white hover:bg-tertiary hover:shadow hover:brightness-125 md:py-1 md:px-2">
             <a href="mailto:abuabdirohman4@gmail.com">
               abuabdirohman4@gmail.com
             </a>
           </button>
-          <div className="mt-10 mb-14">
-            <AboutButton
-              className="ml-2"
-              color="bg-[#1DA1F3]"
-              link="/portfolio"
-            >
+          <div className="mx-auto mt-10 mb-14 grid grid-cols-2 md:flex md:gap-10">
+            <AboutButton color="bg-[#1DA1F3]" link="/portfolio">
               Portfolio
             </AboutButton>
             <AboutButton color="bg-primary" link="/skills">
@@ -49,7 +45,7 @@ const About = () => {
             </AboutButton>
           </div>
           <p className="mt-10">Follow me on</p>
-          <div className="mt-2 flex">
+          <div className="mt-2 flex justify-center md:justify-start">
             <a target="_blank" href="https://github.com/abuabdirohman4">
               <img
                 src={IconLinkedln}
