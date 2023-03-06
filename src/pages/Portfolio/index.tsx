@@ -7,9 +7,9 @@ const Portfolio = () => {
   return (
     <Container>
       <h1 className="text-[22px] font-semibold">Portfolios</h1>
-      <Link className="md:hidden" to="/">
+      {/* <Link className="md:hidden" to="/">
         Back to home
-      </Link>
+      </Link> */}
       <div className="relative mt-4 md:mt-0">
         <div className="flex flex-wrap" id="carousel-porto">
           {Porto.map((data, key) => (
