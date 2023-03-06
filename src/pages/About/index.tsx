@@ -41,7 +41,7 @@ const About = () => {
               Article
             </AboutButton>
             <AboutButton color="bg-tertiary" link="/contact">
-              Profiles
+              Contact
             </AboutButton>
           </div>
           <p className="mt-10">Follow me on</p>
