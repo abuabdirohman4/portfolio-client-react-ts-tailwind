@@ -11,7 +11,11 @@ const Contact = () => {
       </h1>
       <div className="w-full xl:grid xl:grid-cols-2">
         <div className="rounded-[30px] bg-white p-8">
-          <form action="https://formsubmit.co/abuabdirohman4@gmail.com" target="_blank" method="POST">
+          <form
+            action="https://formsubmit.co/0783028f4caba2b9f562cac97be1c8ec"
+            target="_blank"
+            method="POST"
+          >
             <div className="mb-5 flex flex-col">
               <label htmlFor="FullName" className="mb-2 text-lg">
                 Name
