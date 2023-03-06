@@ -1,6 +1,6 @@
 import Container from "../../components/Container";
 import Hero from "../../assets/images/hero.svg";
-import Article from "../Article";
+import Article from "../Article/home";
 import Portfolio from "../Portfolio/home";
 import Skills from "../Skills";
 import Contact from "../Contact";
