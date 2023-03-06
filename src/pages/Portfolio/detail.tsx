@@ -35,11 +35,7 @@ const PortfolioDetail = () => {
   let scrollPosition = 0;
   let windowSize = null;
 
-  console.log("carouselWidth", carouselWidth);
-  console.log("cardWidth", cardWidth);
-
   const next = () => {
-    console.log(window.innerWidth);
     window.innerWidth > 768 ? (windowSize = 3) : (windowSize = 1);
     if (scrollPosition < carouselWidth - cardWidth * windowSize) {
       scrollPosition += cardWidth;

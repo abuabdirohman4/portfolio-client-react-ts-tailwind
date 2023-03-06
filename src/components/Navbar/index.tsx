@@ -6,6 +6,10 @@ const Navbar = () => {
   const [isMenuActive, setMenuActive] = useState(false);
   const className =
     "align-center flex border-b border-gray-100 py-2 pl-3 pr-4 text-base font-normal text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-indigo-600 md:dark:hover:bg-transparent md:dark:hover:text-white";
+  const clickOnMobile = () => {
+    window.innerWidth < 768 && setMenuActive((prev) => !prev);
+  };
+
   return (
     <nav className="rounded border-gray-200 bg-white px-2 py-2.5 sm:px-4 md:block">
       <div className="container mx-auto my-2 flex flex-wrap items-center justify-between">
@@ -61,7 +65,7 @@ const Navbar = () => {
             <li className="!ml-14">
               <NavLink
                 to="/"
-                onClick={() => setMenuActive((prev) => !prev)}
+                onClick={clickOnMobile}
                 className={({ isActive }) =>
                   isActive
                     ? `!font-semibold text-primary ${className}`
@@ -74,7 +78,7 @@ const Navbar = () => {
             <li className="!ml-14">
               <NavLink
                 to="/about"
-                onClick={() => setMenuActive((prev) => !prev)}
+                onClick={clickOnMobile}
                 className={({ isActive }) =>
                   isActive
                     ? `!font-semibold text-primary ${className}`
@@ -87,7 +91,7 @@ const Navbar = () => {
             <li className="!ml-14">
               <NavLink
                 to="/skills"
-                onClick={() => setMenuActive((prev) => !prev)}
+                onClick={clickOnMobile}
                 className={({ isActive }) =>
                   isActive
                     ? `!font-semibold text-primary ${className}`
@@ -100,7 +104,7 @@ const Navbar = () => {
             <li className="!ml-14">
               <NavLink
                 to="/portfolio"
-                onClick={() => setMenuActive((prev) => !prev)}
+                onClick={clickOnMobile}
                 className={({ isActive }) =>
                   isActive
                     ? `!font-semibold text-primary ${className}`
@@ -113,7 +117,7 @@ const Navbar = () => {
             <li className="!ml-14">
               <NavLink
                 to="/article"
-                onClick={() => setMenuActive((prev) => !prev)}
+                onClick={clickOnMobile}
                 className={({ isActive }) =>
                   isActive
                     ? `!font-semibold text-primary ${className}`
@@ -126,7 +130,7 @@ const Navbar = () => {
             <li className="!ml-14">
               <NavLink
                 to="/contact"
-                onClick={() => setMenuActive((prev) => !prev)}
+                onClick={clickOnMobile}
                 className={({ isActive }) =>
                   isActive
                     ? `!font-semibold text-primary ${className}`
