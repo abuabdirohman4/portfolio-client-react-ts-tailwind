@@ -19,11 +19,11 @@ const Home = () => {
               Abu Abdirohman
             </p>
             <p className="text-xl font-bold text-secondary">
-              Full Stack Developer Who Currently Focus On ReactJs & Typescript
+              Full Stack Developer Who Currently Focus On Odoo Development
             </p>
             <p className="my-8 text-xl font-light text-tertiary">
-              Developer at Indosat Ooredoo Hutchison <br /> ReactJs & Frontend
-              Web Technology Enthusiast
+              Developer at AutoWealth Singapore <br /> Web
+              Technology Enthusiast
             </p>
             <a href="#contact">
               <button className="mt-2 mr-2 rounded-full border border-transparent bg-primary px-8 py-3 text-base font-medium text-white hover:shadow hover:brightness-125 md:py-2 md:px-10 md:text-sm">
@@ -59,7 +59,7 @@ const Home = () => {
               </div>
               <div>
                 <p className="text-[#151A26]">Linkedln</p>
-                <p className="text-[#A3A5AA]">4 Work Experience</p>
+                <p className="text-[#A3A5AA]">5 Work Experience</p>
               </div>
             </div>
             <img
@@ -77,7 +77,7 @@ const Home = () => {
               </div>
               <div>
                 <p className="text-[#151A26]">Github</p>
-                <p className="text-[#A3A5AA]">120 Repositories</p>
+                <p className="text-[#A3A5AA]">136 Repositories</p>
               </div>
             </div>
           </div>

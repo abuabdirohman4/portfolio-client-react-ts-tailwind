@@ -87,11 +87,13 @@ const About = () => {
         learner. I am currently working at{" "}
         <a
           className="text-primary hover:brightness-50"
-          href="https://ioh.co.id/"
+          // href="https://ioh.co.id/"
+          href="https://www.autowealth.sg/"
         >
-          Indosat Ooredoo Hutchison
+          {/* Indosat Ooredoo Hutchison  */}
+          AutoWealth
         </a>
-        , Jakarta, Indonesia. I have worked on a wide range of technologies and
+        , Singapore. I have worked on a wide range of technologies and
         have worked on projects ranging from small to large scale. I am a
         self-motivated and self-driven individual who is always looking for new
         challenges and opportunities. I love participating in project team and

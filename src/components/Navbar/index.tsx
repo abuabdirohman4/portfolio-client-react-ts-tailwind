@@ -23,7 +23,7 @@ const Navbar = () => {
         <button
           onClick={() => setMenuActive((prev) => !prev)}
           className={[
-            "z-30 mr-7 flex h-7 w-7 translate-y-2 flex-col items-center gap-y-1 transition-all hover:gap-y-2 lg:ml-0 xl:hidden",
+            "z-30 mr-7 flex h-7 w-7 translate-y-2 flex-col items-center gap-y-1 transition-all hover:gap-y-2 lg:ml-0 lg:hidden",
             isMenuActive ? "fixed right-3" : "relative",
           ].join(" ")}
         >
@@ -52,14 +52,13 @@ const Navbar = () => {
               ? "fixed inset-0 z-[12] flex w-full flex-col items-center justify-center gap-y-8 bg-white opacity-100 lg:relative lg:flex-row lg:justify-between"
               : "invisible w-full items-center justify-between opacity-0 md:order-1 md:flex md:w-auto lg:visible lg:opacity-100",
           ].join(" ")}
-          id="mobile-menu-2"
         >
           <ul
             className={[
-              "md:font-regular mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm",
+              "md:font-regular mt-4 flex-row md:mt-0 md:space-x-8 md:text-sm",
               isMenuActive
-                ? "flex flex-col items-center gap-y-8 lg:flex-row"
-                : "hidden xl:flex",
+                ? "flex flex-col items-center gap-y-8"
+                : "hidden md:flex",
             ].join(" ")}
           >
             <li className="!ml-14">
